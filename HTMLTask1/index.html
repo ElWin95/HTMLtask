@@ -5,12 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loan Application</title>
+    <style>
+      div {
+        margin-bottom: 12px;
+      }
+    </style>
   </head>
   <body>
-    <table border="1">
-      <thead>
-        Loan Application
-      </thead>
-    </table>
+    <form enctype="multipart/form-data" align="center">
+      <h3>Loan Application</h3>
+      <h3 style="background-color: rgb(220, 183, 255)">
+        Applicant Information:
+      </h3>
+      <div>
+        <label for="ad">First Name :</label>
+        <input id="ad" type="text" required placeholder="Enter First Name" />
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input
+          type="text"
+          readonly
+          value="Mustafayev"
+          placeholder="Enter Last Name"
+        />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" autofocus placeholder="Enter email" />
+      </div>
+      <div>
+        <label>Social Security#:</label>
+        <input
+          type="number"
+          max="100"
+          min="10"
+          step="20"
+          placeholder="Social Security"
+        />
+      </div>
+      <div>
+        <label>Daytime Phone:</label>
+        <input type="tel" placeholder="Enter Daytime Phone" />
+      </div>
+      <div>
+        <label>Evening Phone:</label>
+        <input type="tel" placeholder="Enter Evening Phone" />
+      </div>
+      <h3 style="background-color: rgb(220, 183, 255)">Loan Information:</h3>
+      <div>
+        <label>Loan Type:</label>
+        <select required>
+          <option disabled selected>Choose a vehicle</option>
+          <optgroup label="Toyota">
+            <option>Prius</option>
+            <option>Camry</option>
+            <option>Corolla</option>
+          </optgroup>
+          <optgroup label="BMW">
+            <option>M3</option>
+            <option>M5</option>
+            <option>M6</option>
+          </optgroup>
+          <option selected value="az">Automobile</option>
+          <option>Motorcycle</option>
+          <option>Bicycle</option>
+        </select>
+      </div>
+      <div>
+        <label>Loan Amount$:</label>
+        <input
+          type="number"
+          max="100"
+          min="10"
+          step="20"
+          placeholder="Amount"
+        />
+      </div>
+      <div>
+        <label>Description:</label>
+        <textarea placeholder="About App">
+Application to finance the purchase of a Toyota Prius.</textarea
+        >
+      </div>
+      <input type="submit" value="ApplyForLoan" />
+    </form>
   </body>
 </html>

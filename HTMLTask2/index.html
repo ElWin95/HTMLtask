@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic form design using HTML</title>
+    <style>
+      div {
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GeeksforGeeks</h1>
+    <h3>Basic form design using HTML</h3>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <label for="fn">First Name:</label>
+          <input id="fn" type="text" placeholder="Enter First Name" />
+        </div>
+        <div>
+          <label for="ln">Last Name:</label>
+          <input id="ln" type="text" placeholder="Enter Last Name" />
+        </div>
+        <div>
+          <label>Gender:</label>
+          <input type="radio" name="gender" checked />
+          <label>Male</label>
+          <input type="radio" name="gender" checked />
+          <label>Female</label>
+        </div>
+        <div>
+          <label>email:</label>
+          <input type="email" autofocus placeholder="email" />
+        </div>
+        <div>
+          <label>Date of Birth:</label>
+          <input type="date" max="2023-04-16" min="1995-04-16" />
+        </div>
+        <div>
+          <label>Address:</label>
+          <br />
+          <textarea placeholder="Enter address">Baku</textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
